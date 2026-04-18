@@ -16,6 +16,11 @@ The lab demonstrates practical experience with Active Directory, Group Policy, a
 
 ---
 
+##Tools Used
+
+
+---
+
 ## Environment / Architecture
 The lab environment consists of both virtual machines and physical devices to simulate a small enterprise network:
 
@@ -64,6 +69,11 @@ Each scenario includes step-by-step actions, screenshots, and validation of resu
 ---
 
 ## Architecture
+
+---
+
+##Future Improvements
+
 
 ---
 
