@@ -12,49 +12,42 @@ The domain is configured with a lockout policy that defines how many failed logi
 - Lockout duration: **30 minutes**
 - Reset counter after: **30 minutes**
 
-![Account Lockout Policy](../screenshots/account-lockout/policy.png)
+![Account Lockout Policy](../screenshots/policy.png)
 
 ---
 
 ### Step 2: Failed Login Attempts
 The user attempts to log in with incorrect credentials multiple times. The system begins delaying login attempts after repeated failures, indicating that security controls are actively monitoring authentication attempts.
 
-![Invalid Credentials](../screenshots/account-lockout/invalid-credentials.png)
+![Invalid Credentials](../screenshots/invalid-credentials.png)
 
 ---
 
 ### Step 3: Account Locked Out
 After exceeding the allowed number of failed attempts, the account is locked. The user is presented with a message stating that the account is currently locked and cannot be accessed.
 
-![Account Locked](../screenshots/account-lockout/account-locked.png)
+![Account Locked](../screenshots/account-locked.png)
 
 ---
 
-### Step 4: Verification in Active Directory
-The administrator verifies the lockout status in **Active Directory Users and Computers (ADUC)**. The user account (**Will Johnson**) is visible within the domain and confirmed to be locked.
-
-![ADUC User View](../screenshots/account-lockout/aduc-user.png)
-
----
-
-### Step 5: Account Properties – Locked Status
+### Step 4: Account Properties – Locked Status
 Within the user’s account properties, the system indicates that the account is currently locked out on the domain controller. This confirms that the lockout policy has been enforced.
 
-![Locked Account Properties](../screenshots/account-lockout/locked-properties.png)
+![Locked Account Properties](../screenshots/locked-properties.png)
 
 ---
 
-### Step 6: Unlocking the Account
+### Step 5: Unlocking the Account
 The administrator selects the **"Unlock account"** option in the account properties. This action restores access to the user without waiting for the lockout duration to expire.
 
-![Unlock Account](../screenshots/account-lockout/unlock-account.png)
+![Unlock Account](../screenshots/unlock-account.png)
 
 ---
 
-### Step 7: Account Restored
-After applying the change, the account is successfully unlocked. The user can now log in again with the correct credentials.
+### Step 6: Account Restored
+After applying the change, the account is successfully unlocked. The user can now log in again with the correct credentials. Notice how There is no longer a check box allowing the administrator to unlock the account
 
-![Unlocked Account Confirmation](../screenshots/account-lockout/unlocked-confirmation.png)
+![Unlocked Account Confirmation](../screenshots/unlocked-confirmation.png)
 
 ---
 
