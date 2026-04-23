@@ -12,8 +12,7 @@ In addition to IIS itself, several required features were enabled to support dyn
 - IIS Management Console  
 
 These components allow IIS to properly handle web requests and support PHP execution.
-
-📸 Screenshot:  
+ 
 ![IIS Features Enabled](../screenshots/iis-features.png)
 
 ---
@@ -30,8 +29,7 @@ During installation, I configured the server with the following settings:
 - Firewall Access: Enabled  
 
 This setup allows the osTicket application to communicate with the database locally through standard MySQL networking.
-
-📸 Screenshot:  
+  
 ![MySQL Type and Networking](../screenshots/mysql-config.png)
 
 ---
@@ -41,8 +39,7 @@ This setup allows the osTicket application to communicate with the database loca
 PHP is required for osTicket because it is a PHP-based web application. IIS cannot process PHP files on its own, so PHP must be installed to execute the application logic.
 
 I downloaded PHP from the official website and selected the appropriate Windows build for IIS integration.
-
-📸 Screenshot:  
+ 
 ![PHP Download Page](../screenshots/php-download.png)
 
 After installing PHP, I configured the `php.ini` file and enabled required extensions such as:
@@ -60,8 +57,7 @@ These extensions are required for osTicket to function properly.
 After configuring PHP, I connected it to IIS by setting up a handler mapping using FastCGI.
 
 The mapping was configured so that all `.php` files are processed by the PHP engine instead of being treated as static files. This allows IIS to correctly execute the osTicket application.
-
-📸 Screenshot:  
+ 
 ![PHP Handler Mapping](../screenshots/php-handler-mapping.png)
 
 ---
@@ -71,8 +67,7 @@ The mapping was configured so that all `.php` files are processed by the PHP eng
 Once IIS, MySQL, and PHP were configured, I downloaded the osTicket application. osTicket is the help desk system that users will interact with.
 
 The application files were placed into the IIS web root directory so they could be accessed through the browser.
-
-📸 Screenshot:  
+ 
 ![osTicket Download Page](../screenshots/osticket-download.png)
 
 ---
@@ -84,13 +79,11 @@ The application files were placed into the IIS web root directory so they could 
 Before running the osTicket installer, I created a dedicated MySQL database that the application would use to store all ticketing data.
 
 I created the database using the MySQL command-line interface and confirmed that the operation completed successfully.
-
-📸 Screenshot:  
+  
 ![Create osTicket Database](../screenshots/mysql-create-database.png)
 
 After creating the database, I verified that it existed by listing all available databases. The `osticket` database appeared in the output, confirming that it was successfully created and ready to be used during installation.
-
-📸 Screenshot:  
+ 
 ![Verify osTicket Database](../screenshots/mysql-show-databases.png)
 
 ---
@@ -107,8 +100,7 @@ During this step, I provided the database name, username, and password to connec
 - Created the administrator account  
 
 Once the installation completed successfully, osTicket displayed a confirmation page indicating that the system was ready for use.
-
-📸 Screenshot:  
+  
 ![osTicket Installation Complete](../screenshots/osticket-install-complete.png)
 
 This marked the point where the application became fully functional.
@@ -122,8 +114,7 @@ After installation, I accessed the staff control panel using the `/scp/` endpoin
 This interface is used by administrators and IT staff to manage tickets, users, and system settings.
 
 The following screenshot shows the admin dashboard after successfully logging in, confirming that the installation was completed correctly and that the ticketing system is operational.
-
-📸 Screenshot:  
+ 
 ![osTicket Staff Panel](../screenshots/osticket-staff-panel.png)
 
 ---
@@ -142,15 +133,13 @@ The initial configuration of the shortcut included:
 - Target type: URL  
 - Location: Desktop  
 - Target URL: http://localhost/osticket  
-
-📸 Screenshot:  
+ 
 ![GPO Shortcut Initial Config](../screenshots/gpo-shortcut-localhost.png)
 
 The localhost URL works only on the server itself, so after confirming that the application was accessible, I updated the shortcut to use the server’s IP address. This allows other devices on the network to access the ticketing system.
 
 - Updated Target URL: http://192.168.4.146/osticket
-
-📸 Screenshot:  
+ 
 ![GPO Shortcut Updated Config](../screenshots/gpo-shortcut-ip.png)
 
 This ensures that all domain users receive a working shortcut that points to the correct server location.
@@ -163,7 +152,6 @@ After Group Policy is applied, users in the domain automatically receive the Sub
 
 This shortcut provides direct access to the osTicket submission portal and simulates a real-world enterprise environment where employees can quickly submit IT requests.
 
-📸 Screenshot Placeholder:  
 ![User Desktop Ticket Shortcut](../screenshots/user-ticket-shortcut.png)
 
 ---
