@@ -69,6 +69,7 @@ Each scenario includes step-by-step actions, screenshots, and validation of resu
 ---
 
 ## Architecture
+![Architecture](../screenshots/architecture.png)
 
 ---
 
