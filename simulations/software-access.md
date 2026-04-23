@@ -10,39 +10,29 @@ In this scenario, employees in the **Sales department** require **Google Chrome*
 ### Step 1: Configure Shared Software Repository
 The administrator creates a shared folder containing the Chrome installation package and configures **share permissions** to allow domain users to access the installer.
 
-![Software Share Permissions](../screenshots/software-access/share-permissions.png)
+![Software Share Permissions](../screenshots/share-permissions.png)
 
 ---
 
 ### Step 2: Verify Network Share Path
 The folder is shared on the network and assigned a UNC path (e.g., `\\WIN-XXXX\Software`). This path is required for Group Policy to locate and deploy the application across the domain.
 
-![Software Share Path](../screenshots/software-access/share-path.png)
+![Software Share Path](../screenshots/share-path.png)
 
 ---
 
 ### Step 3: Create Group Policy Object for Sales
 Within **Group Policy Management**, the administrator creates a new GPO named **"Deploy Chrome - Sales"** and links it to the **Sales organizational unit**.
 
-![Create GPO](../screenshots/software-access/create-gpo.png)
+![Create GPO](../screenshots/create-gpo.png)
+![Create GPO](../screenshots/deploy-gpo.png)
 
 ---
 
-### Step 4: Configure Software Installation Policy
-The administrator edits the GPO and navigates to:
-
-`Computer Configuration → Policies → Software Settings → Software Installation`
-
-From here, the Chrome installation package is added using the network share path and assigned for deployment.
-
-![Software Installation Policy](../screenshots/software-access/software-installation.png)
-
----
-
-### Step 5: Assign Google Chrome to Sales OU
+### Step 4: Assign Google Chrome to Sales OU
 Google Chrome is configured as an **Assigned** application. This means it will automatically install on machines within the Sales OU during system startup or policy refresh.
 
-![Chrome Assigned](../screenshots/software-access/chrome-assigned.png)
+![Chrome Assigned](../screenshots/chrome-assigned.png)
 
 ---
 
@@ -53,14 +43,14 @@ On the client machine used by **Stacy Walters**, the administrator runs:
 
 This command refreshes Group Policy and triggers the software deployment process.
 
-![GPUpdate](../screenshots/software-access/gpupdate.png)
+![GPUpdate](../screenshots/gpupdate.png)
 
 ---
 
 ### Step 7: Verify User Context
 The administrator confirms the logged-in user is part of the Sales domain group by running `whoami`, verifying the session is under **labdomain\swalters**. After the policy update, **Google Chrome** appears on the user's desktop, confirming that the software was successfully provisioned through Group Policy.
 
-![Whoami Verification](../screenshots/software-access/whoami.png)
+![Whoami Verification](../screenshots/whoamiii.png)
 
 ---
 
