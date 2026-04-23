@@ -1,1 +1,1 @@
-![Architecture](../screenshots/architecture.png)
+![Architecture](screenshots/architecture.png)
