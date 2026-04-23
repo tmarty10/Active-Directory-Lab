@@ -17,34 +17,27 @@ The domain is configured with a lockout policy that defines how many failed logi
 ---
 
 ### Step 2: Failed Login Attempts
-The user attempts to log in with incorrect credentials multiple times. The system begins delaying login attempts after repeated failures, indicating that security controls are actively monitoring authentication attempts.
+The user attempts to log in with incorrect credentials multiple times. The system begins delaying login attempts after repeated failures, indicating that security controls are actively monitoring authentication attempts. After exceeding the allowed number of failed attempts, the account is locked. The user is presented with a message stating that the account is currently locked and cannot be accessed.
 
 ![Invalid Credentials](../screenshots/invalid-credentials.png)
 
 ---
 
-### Step 3: Account Locked Out
-After exceeding the allowed number of failed attempts, the account is locked. The user is presented with a message stating that the account is currently locked and cannot be accessed.
-
-![Account Locked](../screenshots/account-locked.png)
-
----
-
-### Step 4: Account Properties – Locked Status
+### Step 3: Account Properties – Locked Status
 Within the user’s account properties, the system indicates that the account is currently locked out on the domain controller. This confirms that the lockout policy has been enforced.
 
 ![Locked Account Properties](../screenshots/locked-properties.png)
 
 ---
 
-### Step 5: Unlocking the Account
+### Step 4: Unlocking the Account
 The administrator selects the **"Unlock account"** option in the account properties. This action restores access to the user without waiting for the lockout duration to expire.
 
 ![Unlock Account](../screenshots/unlock-account.png)
 
 ---
 
-### Step 6: Account Restored
+### Step 5: Account Restored
 After applying the change, the account is successfully unlocked. The user can now log in again with the correct credentials. Notice how There is no longer a check box allowing the administrator to unlock the account
 
 ![Unlocked Account Confirmation](../screenshots/unlocked-confirmation.png)
