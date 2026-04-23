@@ -7,9 +7,8 @@
 The domain controller was set up using a Windows Server 2022 virtual machine. After launching the server, I accessed Server Manager to begin configuring the system.
 
 From the dashboard, I verified that the server was running properly and ready for role configuration.
-
-📸 Screenshot:  
-![Server Manager Dashboard](../screenshots/domain/server-manager-dashboard.png)
+ 
+![Server Manager Dashboard](../screenshots/server-manager-dashboard.png)
 
 ---
 
@@ -24,9 +23,8 @@ Next, I reviewed the server’s system properties to confirm important configura
 - System resources (CPU, RAM, storage)  
 
 This step ensures that the server is properly configured before promoting it to a domain controller.
-
-📸 Screenshot:  
-![Server Properties](../screenshots/domain/server-properties.png)
+  
+![Server Properties](../screenshots/server-properties.png)
 
 ---
 
@@ -35,9 +33,8 @@ This step ensures that the server is properly configured before promoting it to 
 After confirming the server configuration, I installed the Active Directory Domain Services (AD DS) role through Server Manager.
 
 Once installed, the server was promoted to a domain controller, creating a new domain environment.
-
-📸 Screenshot:  
-![AD DS Role Installed](../screenshots/domain/ad-ds-installed.png)
+ 
+![AD DS Role Installed](../screenshots/ad-ds-installed.png)
 
 ---
 
@@ -63,9 +60,8 @@ Within the domain, I created organizational units (OUs) to simulate a real-world
 - Sales  
 
 These OUs allow for structured management of users and devices within the domain.
-
-📸 Screenshot:  
-![Active Directory Structure](../screenshots/domain/ad-structure.png)
+  
+![Active Directory Structure](../screenshots/ad-structure.png)
 
 ---
 
@@ -89,9 +85,8 @@ Before joining endpoint devices to the domain, I configured their network settin
 Specifically, I updated the DNS settings on each endpoint to point to the domain controller’s IP address. This is required because domain name resolution depends on the domain controller’s DNS service.
 
 - Preferred DNS Server: 192.168.4.113  
-
-📸 Screenshot:  
-![Endpoint DNS Configuration](../screenshots/domain/endpoint-dns-config.png)
+  
+![Endpoint DNS Configuration](../screenshots/endpoint-dns-config.jpg)
 
 This step ensures that the endpoint can properly resolve the domain name (`labdomain.local`) during the join process.
 
@@ -105,8 +100,7 @@ This was done through the System Properties settings by changing the device memb
 
 - Domain: labdomain.local  
 
-📸 Screenshot:  
-![Join Domain](../screenshots/domain/join-domain.png)
+![Join Domain](../screenshots/join-domain.jpg)
 
 ---
 
@@ -115,18 +109,16 @@ This was done through the System Properties settings by changing the device memb
 To complete the domain join process, I provided administrator credentials from the domain controller.
 
 This step verifies that the user has permission to add devices to the domain.
-
-📸 Screenshot:  
-![Domain Credentials](../screenshots/domain/domain-credentials.png)
+  
+![Domain Credentials](../screenshots/domain-credentials.jpg)
 
 ---
 
 ### 9. Confirm Domain Join Success
 
 After authentication, the system confirmed that the endpoint was successfully joined to the domain.
-
-📸 Screenshot:  
-![Domain Join Success](../screenshots/domain/domain-join-success.png)
+ 
+![Domain Join Success](../screenshots/domain-join-success.jpg)
 
 ---
 
@@ -135,9 +127,8 @@ After authentication, the system confirmed that the endpoint was successfully jo
 After joining the domain, the system required a restart to apply the changes.
 
 This is necessary for the device to fully integrate into the domain environment and begin using domain authentication.
-
-📸 Screenshot:  
-![Restart Required](../screenshots/domain/restart-required.png)
+ 
+![Restart Required](../screenshots/restart-required.jpg)
 
 ---
 
@@ -150,4 +141,4 @@ At this point, the endpoint device is fully joined to the domain and can:
 - Receive Group Policy configurations  
 - Communicate with the domain controller  
 
-This completes the integration of endpoint devices into the Active Directory environment, allowing for centralized management and realistic IT support scenarios within the lab.
+This completes the integration of endpoint devices into the Active Directory environment, allowing for centralized management and realistic IT support scenarios within the lab. A similar process was taken with the remaining endpoints to connect them to the domain.
