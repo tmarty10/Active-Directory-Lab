@@ -1,7 +1,7 @@
 ## Account Lockout Simulation
 
 ### Scenario Overview
-In a typical enterprise environment, an account lockout can occur when a user repeatedly enters an incorrect password due to forgotten credentials, cached credentials, or potential unauthorized access attempts. In this scenario, the user **Will Johnson** attempts to log in multiple times with invalid credentials, triggering the domain’s account lockout policy. The IT administrator must then verify the lockout and restore access.
+In a typical enterprise environment, an account lockout can occur when a user repeatedly enters an incorrect password due to forgotten credentials. In this scenario, the user **Will Johnson** attempts to log in multiple times with invalid credentials, triggering the domain’s account lockout policy. The IT administrator must then verify the lockout and restore access.
 
 ---
 
