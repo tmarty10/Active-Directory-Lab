@@ -57,12 +57,12 @@ All endpoints are joined to the domain and organized into appropriate groups to 
 ## Simulated Scenarios
 The following real-world IT support scenarios were implemented and tested:
 
-- [Account Lockout](simulations/account-lockout/)  
-- [Password Reset](simulations/password-reset/)  
-- [New Employee Onboarding](simulations/new-employee-onboarding/)  
-- [Folder Access Request (Permissions)](simulations/folder-access/)  
-- [Account Disabled (Employee Termination)](simulations/account-disabled/)  
-- [Software Deployment via GPO](simulations/software-access/)  
+- [Account Lockout](simulations/account-lockout.md)  
+- [Password Reset](simulations/password-reset.md)  
+- [New Employee Onboarding](simulations/new-employee-onboarding.md)  
+- [Folder Access Request (Permissions)](simulations/folder-access.md)  
+- [Account Disabled (Employee Termination)](simulations/account-disabled.md)  
+- [Software Deployment via GPO](simulations/software-access.md)  
 
 Each scenario includes step-by-step actions, screenshots, and validation of results.
 
