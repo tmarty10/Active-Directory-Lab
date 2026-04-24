@@ -13,14 +13,14 @@ The administrator disables the account, and the system confirms that the user ob
 
 ---
 
-### Step 3: Verify Access is Revoked
+### Step 2: Verify Access is Revoked
 After the account is disabled, the user attempts to log in and receives a message indicating that the account has been disabled. This confirms that access has been successfully revoked.
 
 ![Login Blocked](../screenshots/login-blocked.png)
 
 ---
 
-### Step 4: Move Account to Disabled Users OU
+### Step 3: Move Account to Disabled Users OU
 To maintain proper organization and follow best practices, the administrator moves the disabled account to a designated **Disabled Users** organizational unit. This helps separate inactive accounts from active users and supports account management and auditing.
 
 ![Disabled Users OU](../screenshots/disabled-users-ou.png)
