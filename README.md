@@ -29,7 +29,7 @@ The lab demonstrates practical experience with Active Directory, Group Policy, a
 
 ---
 
-## Environment / Architecture
+## Environment
 The lab environment consists of both virtual machines and physical devices to simulate a small enterprise network:
 
 - **Domain Controller:** Windows Server 2022 (Active Directory, DNS)  
