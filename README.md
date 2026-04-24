@@ -16,8 +16,16 @@ The lab demonstrates practical experience with Active Directory, Group Policy, a
 
 ---
 
-##Tools Used
+## Tools Used
 
+- **Operating Systems:** Windows Server 2022, Windows 11 Pro, Windows 10 Pro 
+- **Directory Services:** Active Directory Domain Services (AD DS)  
+- **Group Policy Management:** Group Policy Management Console (GPMC)  
+- **Ticketing System:** osTicket (self-hosted on Windows 11 VM)
+- **Web Server:** IIS
+- **Database:** MySQL Server
+- **Virtualization:** VMware Workstation  
+- **Networking:** DNS, Domain Networking, IP configuration  
 
 ---
 
@@ -49,12 +57,12 @@ All endpoints are joined to the domain and organized into appropriate groups to 
 ## Simulated Scenarios
 The following real-world IT support scenarios were implemented and tested:
 
-- [Account Lockout](./simulations/account-lockout/)  
-- [Password Reset](./simulations/password-reset/)  
-- [New Employee Onboarding](./simulations/new-employee-onboarding/)  
-- [Folder Access Request (Permissions)](./simulations/folder-access/)  
-- [Account Disabled (Employee Termination)](./simulations/account-disabled/)  
-- [Software Deployment via GPO](./simulations/software-access/)  
+- [Account Lockout](simulations/account-lockout/)  
+- [Password Reset](simulations/password-reset/)  
+- [New Employee Onboarding](simulations/new-employee-onboarding/)  
+- [Folder Access Request (Permissions)](simulations/folder-access/)  
+- [Account Disabled (Employee Termination)](simulations/account-disabled/)  
+- [Software Deployment via GPO](simulations/software-access/)  
 
 Each scenario includes step-by-step actions, screenshots, and validation of results.
 
@@ -72,9 +80,3 @@ Each scenario includes step-by-step actions, screenshots, and validation of resu
 ![Architecture](screenshots/architecture.png)
 
 ---
-
-##Future Improvements
-
-
----
-
